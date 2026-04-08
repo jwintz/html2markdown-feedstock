@@ -13,18 +13,20 @@ with entire websites and can convert HTML from URLs, files, or stdin.
 
 ## Channel
 
-The package can be published on prefix.dev channels.
+The package can be published on:
+[https://prefix.dev/jwintz](https://prefix.dev/jwintz)
 
 ## Installation
 
 ```bash
-pixi add -c https://prefix.dev/channels/jwintz -c conda-forge html2markdown
+pixi workspace channel add --prepend https://prefix.dev/jwintz
+pixi add html2markdown
 ```
 
-Or install directly:
+Or install globally:
 
 ```bash
-pixi install html2markdown
+pixi global install -c https://prefix.dev/jwintz -c conda-forge html2markdown
 ```
 
 ## Build
